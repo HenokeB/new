@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+  <head>
+    <script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+    <script data-require="angular-ui-bootstrap@*" data-semver="0.6.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    
+       
+  </head>
+ 
+  </head>
+
+  <body>
+    <div ng-controller="CarouselDemoCtrl">
+      <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" >
+          <style>
+       
+          </style>
+          <img ng-src="{{slide.imgName}}" style="margin:auto;width:100%;height:320px;" />
+          <div class="carousel-caption">
+            <p>{{slide.caption}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  <script src="js/bannerAnimate.js"> </script>
+  </body>
+
+</html>
